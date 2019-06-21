@@ -9,3 +9,7 @@ Use follow tools to build your cli is so easy. :)
 * [inquirer](https://www.npmjs.com/package/inquirer) A collection of common interactive command line user interfaces.
 
 > `inquirer` is very good, support list, confirm, editor, etc.. input type
+
+# Package Release
+
+* [np](https://github.com/sindresorhus/np) A better `npm publish`
