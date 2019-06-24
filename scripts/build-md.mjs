@@ -43,6 +43,10 @@ async function processProject(project) {
       if (!_.has(project, 'star')) {
         project.star = star
       }
+
+      if (!_.has(project, 'description')) {
+        project.description = info['description']
+      }
     }
   }
 
@@ -84,7 +88,7 @@ async function processToml(filePath) {
         const npmBadge = project.pm ? `[![Npm](${relative(fileDir, NpmBadge)})](${project.pm})` : ''
         const websiteBadge = project.website ? `[![Website](${relative(fileDir, WebsiteBadge)})](${project.website})` : ''
         return [
-          `- ${project.name} (${[githubBadge, starBadge, npmBadge, websiteBadge].filter(Boolean).join(' ')}) ${project.desc || project.description || ''}`,
+          `- ${project.name} ${[githubBadge, starBadge, npmBadge, websiteBadge].filter(Boolean).join(' ')} ${project.desc || project.description || ''}`,
           project.content
         ]
       }),
