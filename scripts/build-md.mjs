@@ -82,7 +82,7 @@ async function processToml(filePath) {
         const githubBadge = project.repo ? `[![Github](${relative(fileDir, GithubBadge)})](${project.repo})` : ''
         const starBadge = typeof project.star === 'number' ? `⭐️(${project.star})` : ''
         const npmBadge = project.pm ? `[![Npm](${relative(fileDir, NpmBadge)})](${project.pm})` : ''
-        const websiteBadge = project.website ? `[![Website](${project.website})](${relative(fileDir, WebsiteBadge)})` : ''
+        const websiteBadge = project.website ? `[![Website](${WebsiteBadge})](${relative(fileDir, project.website)})` : ''
         return [
           `- ${project.name} (${[githubBadge, starBadge, npmBadge, websiteBadge].filter(Boolean).join(' ')}) ${project.desc || project.description || ''}`,
           project.content

@@ -5,7 +5,7 @@
 
 ### Command Line Arguments Parser
 
-- yargs ([![Website](http://yargs.js.org/)](../../images/website.svg)) Yargs be a node.js library fer hearties tryin' ter parse optstrings.
+- yargs ([![Website](/Users/xgheaven/Project/interesting-project/images/website.svg)](../../http:/yargs.js.org)) Yargs be a node.js library fer hearties tryin' ter parse optstrings.
 
 ### Readline
 
