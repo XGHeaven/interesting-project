@@ -1,0 +1,30 @@
+title = "Others"
+
+[[groups]]
+title = "Useful Command"
+
+  [[groups.projects]]
+  name = "cash"
+  repo = "https://github.com/dthree/cash"
+  desc = ":dollar: Cross-platform Linux without the suck"
+  content = """
+> I very like this. Because I can use unix-based command in window's `cmd` without install `cygwin`. Just to install a `cash`. But I'm a Macer :joy:.
+> And you can replace `cygwin` with `cash`.
+"""
+  createTime = 1_561_355_978_627
+  updateTime = 1_561_355_978_627
+  star = 7_640
+
+[[groups]]
+title = "Antomation"
+
+  [[groups.projects]]
+  name = "RobotJS"
+  repo = "https://github.com/octalmage/robotjs"
+  desc = "Node.js Desktop Automation."
+  content = """
+> like `AutoHotkey`
+"""
+  createTime = 1_561_355_978_627
+  updateTime = 1_561_355_978_627
+  star = 8_001

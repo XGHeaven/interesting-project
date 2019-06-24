@@ -1,0 +1,49 @@
+title = "Build Cli Tool"
+content = "Use follow tools to build your cli is so easy. :)"
+
+[[groups]]
+title = "Framework"
+
+  [[groups.projects]]
+  name = "Vorpal"
+  repo = "https://github.com/dthree/vorpal"
+  desc = "Node's framework for interactive CLIs."
+  content = """
+> The `cash` depend on this. Good Project to easy interactive...
+"""
+  createTime = 1_561_353_967_753
+  updateTime = 1_561_353_967_753
+  star = 5_117
+
+[[groups]]
+title = "Command Line Arguments Parser"
+
+  [[groups.projects]]
+  name = "yargs"
+  website = "http://yargs.js.org/"
+  desc = "Yargs be a node.js library fer hearties tryin' ter parse optstrings."
+  createTime = 1_561_353_967_753
+  updateTime = 1_561_353_967_753
+
+[[groups]]
+title = "Readline"
+
+  [[groups.projects]]
+  name = "inquirer"
+  pm = "https://www.npmjs.com/package/inquirer"
+  desc = "A collection of common interactive command line user interfaces."
+  content = """
+> `inquirer` is very good, support list, confirm, editor, etc.. input type
+"""
+  createTime = 1_561_353_967_756
+  updateTime = 1_561_353_967_756
+
+[[groups]]
+title = "Package Release"
+
+  [[groups.projects]]
+  name = "np"
+  repo = "https://github.com/sindresorhus/np"
+  createTime = 1_561_353_967_756
+  star = 4_460
+  updateTime = 1_561_356_516_790
