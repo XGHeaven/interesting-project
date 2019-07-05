@@ -98,24 +98,49 @@ async function processToml(filePath) {
 
 async function processDir(source, target) {
   const files = await promises.readdir(source, {withFileTypes: true})
+  const tree = [basename(source)]
   for (const file of files) {
     const place = join(source, file.name)
     if (file.isFile() && file.name.endsWith('.toml')) {
       const content = await processToml(place)
+      const targetFileName = basename(file.name, '.toml') + '.md'
       await promises.mkdir(target, {recursive: true})
-      await promises.writeFile(join(target, basename(file.name, '.toml') + '.md'), content, {encoding: 'utf8'})
+      await promises.writeFile(join(target, targetFileName), content, {encoding: 'utf8'})
+      tree.push(targetFileName)
       continue
     }
 
     if (file.isDirectory()) {
-      await processDir(place, join(target, file.name))
+      tree.push(await processDir(place, join(target, file.name)))
     }
   }
+  return tree
+}
+
+function buildTOC(toc, parentPath = '') {
+  const [folder, ...files] = toc
+  const currentPath = join(parentPath, folder)
+
+  return [
+    `- [${folder}](./${currentPath})`,
+    ...files.map(file => {
+      if (Array.isArray(file)) {
+        return buildTOC(file, currentPath).map(str => `  ${str}`)
+      }
+      return `  - [${file}](./${join(currentPath, file)})`
+    })
+  ].flat(Infinity)
 }
 
 ;(async () => {
   try {
-    await processDir(join(root, 'projects'), join(root, 'docs'))
+    const toc = await processDir(join(root, 'projects'), join(root, 'docs'))
+    // change root name
+    toc[0] = 'docs'
+    let readme = await promises.readFile(join(root, 'README.md'), {encoding: 'utf8'})
+    readme = readme.replace(/<!-- TOC -->[\w\W]*<!-- \/TOC -->/, () => `<!-- TOC -->\n${buildTOC(toc).join('\n')}\n<!-- \/TOC -->`, './')
+    await promises.writeFile(join(root, 'README.md'), readme, {encoding: 'utf8'})
+    console.log('Updated README.md TOC')
   } catch(e) {
     console.error(e)
   }
