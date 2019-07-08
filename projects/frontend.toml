@@ -1,0 +1,16 @@
+title = "Frontend"
+
+[[groups]]
+title = "Template"
+
+  [[groups.projects]]
+  name = "lit-html"
+  repo = "https://github.com/Polymer/lit-html"
+  content = """
+> Polymer 出品，看起来很不错、很简单的一个渲染库，而且还有 patch update 的功能。
+> 缺点就是库会比较大，毕竟为了实现 patch update 包含了一整个 html 的 parser。
+"""
+  createTime = 1_562_553_229_470
+  updateTime = 1_562_553_229_470
+  star = 4_980
+  description = "An efficient, expressive, extensible HTML templating library for JavaScript."
