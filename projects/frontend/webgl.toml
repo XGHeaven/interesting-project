@@ -1,0 +1,15 @@
+title = "WebGL"
+
+[[groups]]
+title = "Framework"
+
+  [[groups.projects]]
+  name = "ogl"
+  repo = "https://github.com/oframe/ogl"
+  content = """
+> 一个很精简的 webgl 框架，和 three.js 的 api 有点像，适合入门学习
+"""
+  createTime = 1_562_743_546_968
+  updateTime = 1_562_743_546_968
+  star = 362
+  description = "Minimal WebGL framework"
