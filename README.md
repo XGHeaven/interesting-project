@@ -14,6 +14,7 @@
     - [native-app.md](./docs/nodejs/native-app.md)
     - [node-addon.md](./docs/nodejs/node-addon.md)
     - [others.md](./docs/nodejs/others.md)
+    - [tools.md](./docs/nodejs/tools.md)
   - [website](./docs/website)
     - [cms.md](./docs/website/cms.md)
 <!-- /TOC -->
