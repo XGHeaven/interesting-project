@@ -1,4 +1,5 @@
 import dotenv from 'dotenv'
+import axios from 'axios'
 dotenv.config()
 
 import TOML from '@iarna/toml'
@@ -13,25 +14,69 @@ const __dirname = (() => {
   return join(pathname, '..')
 })()
 const root = join(__dirname, '..')
-const imagePath = join(root, 'images')
-const GithubBadge = join(imagePath, 'github.svg')
-const NpmBadge = join(imagePath, 'npm.svg')
-const WebsiteBadge = join(imagePath, 'website.svg')
+const forceUpdate = process.argv.indexOf('--force') !== -1
 
 const github = new Octokit({
   auth: process.env.GITHUB_TOKEN
 })
 
+function renderGithubBadge(address) {
+  if (!address) { return '' }
+  const info = parse(address)
+  const [user, repo] = info.pathname.substr(1).split('/')
+  return `[![GitHub stars](https://img.shields.io/github/stars/${user}/${repo}?style=flat-square)](${address})`
+}
+
+function renderNpmBadge(name) {
+  if (!name) { return '' }
+  return `[![npm](https://img.shields.io/npm/v/${name}?style=flat-square)](https://www.npmjs.com/package/${name})`
+}
+
+function renderWebsiteBadge(website) {
+  if (!website) { return '' }
+
+  return `[![website](https://img.shields.io/badge/website-home-yellowgreen?style=flat-square)](${website})`
+}
+
+async function getNpmMetadata(name) {
+  const {data} = await axios.get(`https://registry.cnpmjs.org/${name}`)
+  return data
+}
+
 async function processProject(project) {
   const { updateTime } = project
-  if (!updateTime) {
+  if (!updateTime || forceUpdate) {
     const now = Date.now()
     if (!project.createTime) {
       project.createTime = now
     }
     project.updateTime = now
 
+    if (_.has(project, 'desc')) {
+      project.description = project.desc
+      delete project.desc
+    }
+
+    const {npm, name} = project
+
+    if (npm) {
+      const packageName = npm === true ? name : npm;
+      const pack = await getNpmMetadata(packageName)
+
+      if (!project.description) {
+        project.description = pack.description
+      }
+
+      if (!project.repo && pack.repository) {
+        let repo = pack.repository.url
+        repo = repo.replace(/^git\+/, '')
+        repo = repo.replace(/\.git$/, '')
+        project.repo = repo
+      }
+    }
+
     const {repo} = project
+
     if (repo) {
       const gitUrl = parse(repo)
       const [, githubOwner, githubRepo] = gitUrl.pathname.split('/')
@@ -39,12 +84,8 @@ async function processProject(project) {
         owner: githubOwner,
         repo: githubRepo
       })
-      const star = info['stargazers_count']
-      if (!_.has(project, 'star')) {
-        project.star = star
-      }
 
-      if (!_.has(project, 'description')) {
+      if (!project.description) {
         project.description = info['description']
       }
     }
@@ -83,13 +124,18 @@ async function processToml(filePath) {
       `### ${group.title}`,
       '',
       group.projects.map(project => {
-        const githubBadge = project.repo ? `[![Github](${relative(fileDir, GithubBadge)})](${project.repo})` : ''
-        const starBadge = typeof project.star === 'number' ? `⭐️(${project.star})` : ''
-        const npmBadge = project.pm ? `[![Npm](${relative(fileDir, NpmBadge)})](${project.pm})` : ''
-        const websiteBadge = project.website ? `[![Website](${relative(fileDir, WebsiteBadge)})](${project.website})` : ''
+        const githubBadge = renderGithubBadge(project.repo)
+        const npmBadge = renderNpmBadge(project.npm)
+        const websiteBadge = renderWebsiteBadge(project.website)
         return [
-          `- ${project.name} ${[githubBadge, starBadge, npmBadge, websiteBadge].filter(Boolean).join(' ')} ${project.desc || project.description || ''}`,
-          project.content
+          '<details open>',
+          `<summary><strong>${project.name}</strong> - ${project.description}</summary>`,
+          '',
+          `${[githubBadge, npmBadge, websiteBadge].filter(Boolean).join(' ')}`,
+          '',
+          project.content,
+          '</details>',
+          ''
         ]
       }),
     ])

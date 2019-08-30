@@ -1,17 +1,41 @@
 ### Framework
 
-- Vorpal [![Github](../../images/github.svg)](https://github.com/dthree/vorpal) ⭐️(5117) Node's framework for interactive CLIs.
+<details open>
+<summary><strong>Vorpal</strong> - Node's framework for interactive CLIs.</summary>
+
+[![GitHub stars](https://img.shields.io/github/stars/dthree/vorpal?style=flat-square)](https://github.com/dthree/vorpal)
+
 > The `cash` depend on this. Good Project to easy interactive...
+
+</details>
 
 ### Command Line Arguments Parser
 
-- yargs [![Website](../../images/website.svg)](http://yargs.js.org/) Yargs be a node.js library fer hearties tryin' ter parse optstrings.
+<details open>
+<summary><strong>yargs</strong> - Yargs be a node.js library fer hearties tryin' ter parse optstrings.</summary>
+
+[![GitHub stars](https://img.shields.io/github/stars/yargs/yargs?style=flat-square)](https://github.com/yargs/yargs) [![npm](https://img.shields.io/npm/v/yargs?style=flat-square)](https://www.npmjs.com/package/yargs) [![website](https://img.shields.io/badge/website-home-yellowgreen?style=flat-square)](http://yargs.js.org/)
+
+
+</details>
 
 ### Readline
 
-- inquirer [![Npm](../../images/npm.svg)](https://www.npmjs.com/package/inquirer) A collection of common interactive command line user interfaces.
+<details open>
+<summary><strong>inquirer</strong> - A collection of common interactive command line user interfaces.</summary>
+
+[![GitHub stars](https://img.shields.io/github/stars/SBoudrias/Inquirer.js?style=flat-square)](https://github.com/SBoudrias/Inquirer.js) [![npm](https://img.shields.io/npm/v/inquirer?style=flat-square)](https://www.npmjs.com/package/inquirer)
+
 > `inquirer` is very good, support list, confirm, editor, etc.. input type
+
+</details>
 
 ### Package Release
 
-- np [![Github](../../images/github.svg)](https://github.com/sindresorhus/np) ⭐️(4460) A better `npm publish`
+<details open>
+<summary><strong>np</strong> - A better `npm publish`</summary>
+
+[![GitHub stars](https://img.shields.io/github/stars/sindresorhus/np?style=flat-square)](https://github.com/sindresorhus/np)
+
+
+</details>

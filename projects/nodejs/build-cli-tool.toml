@@ -7,23 +7,25 @@ title = "Framework"
   [[groups.projects]]
   name = "Vorpal"
   repo = "https://github.com/dthree/vorpal"
-  desc = "Node's framework for interactive CLIs."
   content = """
 > The `cash` depend on this. Good Project to easy interactive...
 """
   createTime = 1_561_353_967_753
-  updateTime = 1_561_353_967_753
+  updateTime = 1_567_146_164_906
   star = 5_117
+  description = "Node's framework for interactive CLIs."
 
 [[groups]]
 title = "Command Line Arguments Parser"
 
   [[groups.projects]]
   name = "yargs"
+  npm = "yargs"
   website = "http://yargs.js.org/"
-  desc = "Yargs be a node.js library fer hearties tryin' ter parse optstrings."
   createTime = 1_561_353_967_753
-  updateTime = 1_561_353_967_753
+  updateTime = 1_567_146_164_906
+  description = "Yargs be a node.js library fer hearties tryin' ter parse optstrings."
+  repo = "https://github.com/yargs/yargs"
 
 [[groups]]
 title = "Readline"
@@ -31,12 +33,14 @@ title = "Readline"
   [[groups.projects]]
   name = "inquirer"
   pm = "https://www.npmjs.com/package/inquirer"
-  desc = "A collection of common interactive command line user interfaces."
+  npm = "inquirer"
   content = """
 > `inquirer` is very good, support list, confirm, editor, etc.. input type
 """
   createTime = 1_561_353_967_756
-  updateTime = 1_561_353_967_756
+  updateTime = 1_567_146_164_907
+  description = "A collection of common interactive command line user interfaces."
+  repo = "https://github.com/SBoudrias/Inquirer.js"
 
 [[groups]]
 title = "Package Release"
@@ -46,5 +50,5 @@ title = "Package Release"
   repo = "https://github.com/sindresorhus/np"
   createTime = 1_561_353_967_756
   star = 4_460
-  updateTime = 1_561_358_199_662
+  updateTime = 1_567_146_164_907
   description = "A better `npm publish`"

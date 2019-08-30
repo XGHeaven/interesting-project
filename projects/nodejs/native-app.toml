@@ -16,7 +16,7 @@ title = "Framework"
 > Small distribute package size and native app ability. It's better than `Electron`
 """
   createTime = 1_566_471_729_367
-  updateTime = 1_566_471_729_367
+  updateTime = 1_567_146_168_850
   star = 8_806
   description = "Web rendering surface for Node applications"
 
@@ -26,11 +26,11 @@ title = "Electron"
   [[groups.projects]]
   name = "Photon"
   repo = "https://github.com/connors/photon"
-  desc = "The fastest way to build beautiful Electron apps using simple HTML and CSS"
   content = """
 > It's use `html/css` to build desktop components. Such as desktop app button, list, bars. Just like UI Kit in Swift.
 > In another words, It can run without `Electron`. Because only html/css. Run In Any Browser.
 """
   createTime = 1_561_355_976_912
-  updateTime = 1_561_355_976_912
+  updateTime = 1_567_146_168_850
   star = 9_025
+  description = "The fastest way to build beautiful Electron apps using simple HTML and CSS"

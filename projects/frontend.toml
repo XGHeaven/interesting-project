@@ -11,6 +11,6 @@ title = "Template"
 > 缺点就是库会比较大，毕竟为了实现 patch update 包含了一整个 html 的 parser。
 """
   createTime = 1_562_553_229_470
-  updateTime = 1_562_553_229_470
+  updateTime = 1_567_146_164_001
   star = 4_980
   description = "An efficient, expressive, extensible HTML templating library for JavaScript."
