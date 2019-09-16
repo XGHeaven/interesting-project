@@ -1,0 +1,11 @@
+title = "Docker"
+
+[[groups]]
+title = "Docker Tools"
+
+  [[groups.projects]]
+  name = "lazydocker"
+  repo = "https://github.com/jesseduffield/lazydocker"
+  createTime = 1_568_636_318_195
+  updateTime = 1_568_636_318_195
+  description = "The lazier way to manage everything docker"
