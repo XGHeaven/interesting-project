@@ -4,6 +4,7 @@
 ## TOC
 <!-- TOC -->
 - [docs](./docs)
+  - [alogrithm.md](./docs/alogrithm.md)
   - [db.md](./docs/db.md)
   - [docker.md](./docs/docker.md)
   - [frontend](./docs/frontend)
