@@ -10,6 +10,16 @@
 
 </details>
 
+<details open>
+<summary><strong>plop</strong> - Consistency Made Simple</summary>
+
+[![GitHub stars](https://img.shields.io/github/stars/amwmedia/plop?style=flat-square)](https://github.com/amwmedia/plop)
+
+> 只需要一个配置文件就可以非常灵活的定义好整个项目的文件模板。不需要去写 cli，简洁轻量又强大
+> 但是缺点就是不适合跨项目使用，但是对于单一项目或者开源项目来讲，是非常方便的。
+  
+</details>
+
 ### NAT tools
 
 <details open>

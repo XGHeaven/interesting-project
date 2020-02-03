@@ -15,6 +15,17 @@ title = "Scraffolding Tools"
   star = 944
   description = "Straightforward project scaffolding"
 
+  [[groups.projects]]
+  name = "plop"
+  repo = "https://github.com/amwmedia/plop"
+  content = """
+> 只需要一个配置文件就可以非常灵活的定义好整个项目的文件模板。不需要去写 cli，简洁轻量又强大
+> 但是缺点就是不适合跨项目使用，但是对于单一项目或者开源项目来讲，是非常方便的。
+  """
+  createTime = 1_580_716_362_830
+  updateTime = 1_580_716_362_830
+  description = "Consistency Made Simple"
+
 [[groups]]
 title = "NAT tools"
 
