@@ -1,6 +1,17 @@
 title = "UI Framework"
 
 [[groups]]
+title = "CSS Library"
+
+  [[groups.projects]]
+  name = "classy-ui"
+  repo = "https://github.com/cerebral/classy-ui"
+  createTime = 1_590_474_789_175
+  description = "An automatically optimized design system"
+  updateTime = 1_590_474_809_991
+  content = "原子化 UI 的高性能尝试"
+
+[[groups]]
 title = "Template"
 
   [[groups.projects]]
@@ -14,3 +25,13 @@ title = "Template"
   updateTime = 1_567_146_164_001
   star = 4_980
   description = "An efficient, expressive, extensible HTML templating library for JavaScript."
+
+[[groups]]
+title = "Spec"
+
+  [[groups.projects]]
+  name = "open-ui"
+  website = "https://open-ui.org/"
+  description = "微软 Edge 牵头的标准 UI 规范，比较了市面上 UI 框架的不同组件不同 props 的命名规范以及行为"
+  createTime = 1_590_474_950_491
+  updateTime = 1_590_474_950_491
