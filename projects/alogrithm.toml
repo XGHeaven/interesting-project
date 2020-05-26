@@ -5,11 +5,13 @@ content = """
 """
 
 [[groups]]
-[[groups.projects]]
-name = "Exponential backoff"
-website = "https://en.wikipedia.org/wiki/Exponential_backoff"
-content = """
+title = "Retry"
+
+  [[groups.projects]]
+  name = "Exponential backoff"
+  website = "https://en.wikipedia.org/wiki/Exponential_backoff"
+  content = """
 指数回退算法，原本是用于计算机网络中避免冲突的解决方案，现在可以用于重发重试的通用解决方案。
 """
-createTime = 1_573_456_268_210
-updateTime = 1_573_456_268_210
+  createTime = 1_573_456_268_210
+  updateTime = 1_573_456_268_210

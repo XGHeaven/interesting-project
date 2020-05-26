@@ -1,3 +1,7 @@
+# Others
+
+
+
 ### Useful Command
 
 <details open>

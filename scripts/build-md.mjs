@@ -106,20 +106,17 @@ async function processToml(filePath) {
   const fileContent = await promises.readFile(filePath, {encoding: 'utf8'})
   const data = TOML.parse(fileContent)
 
-  const results = [
-    `# ${data.title}`,
-    data.content,
-    '',
-  ]
-
   const groups = await Promise.all((data.groups || []).map(processGroup))
   data.groups = groups
-  results.push(groups)
 
   // rewrite
   await promises.writeFile(filePath, TOML.stringify(data), {encoding: 'utf8'})
 
   return [
+    `# ${data.title}`,
+    '',
+    (data.content || '').trim(),
+    '',
     data.groups.map(group => [
       `### ${group.title}`,
       '',
