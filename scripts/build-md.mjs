@@ -88,6 +88,9 @@ async function processProject(project) {
       if (!project.description) {
         project.description = info['description']
       }
+      if (!project.website) {
+        project.website = info['homepage']
+      }
     }
   }
 

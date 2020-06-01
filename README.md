@@ -11,6 +11,7 @@
     - [framework.md](./docs/frontend/framework.md)
     - [ui.md](./docs/frontend/ui.md)
     - [webgl.md](./docs/frontend/webgl.md)
+  - [language.md](./docs/language.md)
   - [linux](./docs/linux)
     - [system.md](./docs/linux/system.md)
   - [nodejs](./docs/nodejs)
