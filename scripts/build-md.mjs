@@ -152,7 +152,7 @@ async function processDir(source, target) {
       const targetFileName = basename(file.name, '.toml') + '.md'
       await promises.mkdir(target, {recursive: true})
       await promises.writeFile(join(target, targetFileName), content, {encoding: 'utf8'})
-      tree.push(targetFileName)
+      tree.push({title: content.split('\n')[0].slice(2) || targetFileName, filename: targetFileName})
       continue
     }
 
@@ -173,7 +173,7 @@ function buildTOC(toc, parentPath = '') {
       if (Array.isArray(file)) {
         return buildTOC(file, currentPath).map(str => `  ${str}`)
       }
-      return `  - [${file}](./${join(currentPath, file)})`
+      return `  - [${file.title}](./${join(currentPath, file.filename)})`
     })
   ].flat(Infinity)
 }
