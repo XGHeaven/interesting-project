@@ -4,7 +4,7 @@ title = "Language"
 title = "Token Parser"
 
   [[groups.projects]]
-  title = "PEG.js"
+  name = "PEG.js"
   repo = "https://github.com/pegjs/pegjs"
   createTime = 1_590_984_733_167
   description = "PEG.js: Parser generator for JavaScript"

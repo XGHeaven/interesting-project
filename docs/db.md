@@ -5,7 +5,7 @@
 ### Simple Datebase
 
 <details open>
-<summary><strong>jsonbox</strong> - A Free HTTP based JSON storage.</summary>
+<summary style="margin-bottom: 16px"><strong>jsonbox</strong> - A Free HTTP based JSON storage.</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/vasanthv/jsonbox?style=flat-square)](https://github.com/vasanthv/jsonbox)
 

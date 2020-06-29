@@ -23,4 +23,5 @@
     - [Tools for anything](./docs/nodejs/tools.md)
   - [website](./docs/website)
     - [CMS Website](./docs/website/cms.md)
+  - [Tech Paper](./docs/weekly.md)
 <!-- /TOC -->

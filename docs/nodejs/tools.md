@@ -5,7 +5,7 @@
 ### Scraffolding Tools
 
 <details open>
-<summary><strong>degit</strong> - Straightforward project scaffolding</summary>
+<summary style="margin-bottom: 16px"><strong>degit</strong> - Straightforward project scaffolding</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/Rich-Harris/degit?style=flat-square)](https://github.com/Rich-Harris/degit#actions)
 
@@ -15,7 +15,7 @@
 </details>
 
 <details open>
-<summary><strong>plop</strong> - Consistency Made Simple</summary>
+<summary style="margin-bottom: 16px"><strong>plop</strong> - Consistency Made Simple</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/amwmedia/plop?style=flat-square)](https://github.com/amwmedia/plop)
 
@@ -27,7 +27,7 @@
 ### NAT tools
 
 <details open>
-<summary><strong>localtunnel</strong> - expose yourself</summary>
+<summary style="margin-bottom: 16px"><strong>localtunnel</strong> - expose yourself</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/localtunnel/localtunnel?style=flat-square)](https://github.com/localtunnel/localtunnel) [![website](https://img.shields.io/badge/website-home-yellowgreen?style=flat-square)](https://localtunnel.me)
 

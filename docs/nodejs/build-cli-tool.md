@@ -5,7 +5,7 @@ Use follow tools to build your cli is so easy. :)
 ### Framework
 
 <details open>
-<summary><strong>Vorpal</strong> - Node's framework for interactive CLIs.</summary>
+<summary style="margin-bottom: 16px"><strong>Vorpal</strong> - Node's framework for interactive CLIs.</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/dthree/vorpal?style=flat-square)](https://github.com/dthree/vorpal)
 
@@ -16,7 +16,7 @@ Use follow tools to build your cli is so easy. :)
 ### Command Line Arguments Parser
 
 <details open>
-<summary><strong>yargs</strong> - Yargs be a node.js library fer hearties tryin' ter parse optstrings.</summary>
+<summary style="margin-bottom: 16px"><strong>yargs</strong> - Yargs be a node.js library fer hearties tryin' ter parse optstrings.</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/yargs/yargs?style=flat-square)](https://github.com/yargs/yargs) [![npm](https://img.shields.io/npm/v/yargs?style=flat-square)](https://www.npmjs.com/package/yargs) [![website](https://img.shields.io/badge/website-home-yellowgreen?style=flat-square)](http://yargs.js.org/)
 
@@ -26,7 +26,7 @@ Use follow tools to build your cli is so easy. :)
 ### Readline
 
 <details open>
-<summary><strong>inquirer</strong> - A collection of common interactive command line user interfaces.</summary>
+<summary style="margin-bottom: 16px"><strong>inquirer</strong> - A collection of common interactive command line user interfaces.</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/SBoudrias/Inquirer.js?style=flat-square)](https://github.com/SBoudrias/Inquirer.js) [![npm](https://img.shields.io/npm/v/inquirer?style=flat-square)](https://www.npmjs.com/package/inquirer)
 
@@ -37,7 +37,7 @@ Use follow tools to build your cli is so easy. :)
 ### Package Release
 
 <details open>
-<summary><strong>np</strong> - A better `npm publish`</summary>
+<summary style="margin-bottom: 16px"><strong>np</strong> - A better `npm publish`</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/sindresorhus/np?style=flat-square)](https://github.com/sindresorhus/np)
 

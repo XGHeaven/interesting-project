@@ -1,0 +1,16 @@
+title = "Tech Paper"
+content = "技术报纸，包含了日报、周报、月报等等"
+
+[[groups]]
+title = "IOS"
+
+  [[groups.projects]]
+  name = "老司机 iOS 周报"
+  repo = "https://github.com/SwiftOldDriver/iOS-Weekly"
+  website = "https://github.com/SwiftOldDriver/iOS-Weekly"
+  content = """
+> 很精致的一个 IOS 日报
+"""
+  createTime = 1_593_414_972_963
+  updateTime = 1_593_414_972_963
+  description = "🇨🇳 老司机 iOS 周报"

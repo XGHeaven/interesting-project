@@ -5,7 +5,7 @@
 ### Css in js
 
 <details open>
-<summary><strong>linaria</strong> - Zero-runtime CSS in JS library</summary>
+<summary style="margin-bottom: 16px"><strong>linaria</strong> - Zero-runtime CSS in JS library</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/callstack/linaria?style=flat-square)](https://github.com/callstack/linaria) [![website](https://img.shields.io/badge/website-home-yellowgreen?style=flat-square)](https://linaria.now.sh)
 

@@ -7,7 +7,7 @@ There have many framework to build `Desktop App`. Such as `Electron`, `NW.js`, `
 ### Framework
 
 <details open>
-<summary><strong>Carlo</strong> - Web rendering surface for Node applications</summary>
+<summary style="margin-bottom: 16px"><strong>Carlo</strong> - Web rendering surface for Node applications</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/GoogleChromeLabs/carlo?style=flat-square)](https://github.com/GoogleChromeLabs/carlo)
 
@@ -19,7 +19,7 @@ There have many framework to build `Desktop App`. Such as `Electron`, `NW.js`, `
 ### Electron
 
 <details open>
-<summary><strong>Photon</strong> - The fastest way to build beautiful Electron apps using simple HTML and CSS</summary>
+<summary style="margin-bottom: 16px"><strong>Photon</strong> - The fastest way to build beautiful Electron apps using simple HTML and CSS</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/connors/photon?style=flat-square)](https://github.com/connors/photon)
 

@@ -6,7 +6,7 @@
 ### Retry
 
 <details open>
-<summary><strong>Exponential backoff</strong> - undefined</summary>
+<summary style="margin-bottom: 16px"><strong>Exponential backoff</strong> - undefined</summary>
 
 [![website](https://img.shields.io/badge/website-home-yellowgreen?style=flat-square)](https://en.wikipedia.org/wiki/Exponential_backoff)
 

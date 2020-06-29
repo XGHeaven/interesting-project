@@ -129,7 +129,7 @@ async function processToml(filePath) {
         const websiteBadge = renderWebsiteBadge(project.website)
         return [
           '<details open>',
-          `<summary><strong>${project.name}</strong> - ${project.description}</summary>`,
+          `<summary style="margin-bottom: 16px"><strong>${project.name}</strong> - ${project.description}</summary>`,
           '',
           `${[githubBadge, npmBadge, websiteBadge].filter(Boolean).join(' ')}`,
           '',

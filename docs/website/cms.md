@@ -5,7 +5,7 @@
 ### Static CMS
 
 <details open>
-<summary><strong>Forestry</strong> - Sync your Jekyll, Hugo or VuePress site. Your editors will love it and won’t realize they’re making commits.</summary>
+<summary style="margin-bottom: 16px"><strong>Forestry</strong> - Sync your Jekyll, Hugo or VuePress site. Your editors will love it and won’t realize they’re making commits.</summary>
 
 [![website](https://img.shields.io/badge/website-home-yellowgreen?style=flat-square)](https://forestry.io/)
 

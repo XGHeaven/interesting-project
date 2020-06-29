@@ -5,7 +5,7 @@
 ### Useful Command
 
 <details open>
-<summary><strong>cash</strong> - :dollar: Cross-platform Linux without the suck</summary>
+<summary style="margin-bottom: 16px"><strong>cash</strong> - :dollar: Cross-platform Linux without the suck</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/dthree/cash?style=flat-square)](https://github.com/dthree/cash)
 
@@ -17,7 +17,7 @@
 ### Antomation
 
 <details open>
-<summary><strong>RobotJS</strong> - Node.js Desktop Automation.</summary>
+<summary style="margin-bottom: 16px"><strong>RobotJS</strong> - Node.js Desktop Automation.</summary>
 
 [![GitHub stars](https://img.shields.io/github/stars/octalmage/robotjs?style=flat-square)](https://github.com/octalmage/robotjs)
 
