@@ -5,6 +5,7 @@
 <!-- TOC -->
 - [docs](./docs)
   - [Alogrithm](./docs/alogrithm.md)
+  - [Book/E-Book](./docs/book.md)
   - [DataBase](./docs/db.md)
   - [Docker](./docs/docker.md)
   - [frontend](./docs/frontend)

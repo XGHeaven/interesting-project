@@ -1,0 +1,13 @@
+title = "Book/E-Book"
+
+[[groups]]
+title = "React"
+
+  [[groups.projects]]
+  name = "React技术揭秘"
+  repo = "https://github.com/BetaSu/just-react"
+  website = "https://react.iamkasong.com/"
+  createTime = 1_597_723_467_499
+  updateTime = 1_597_723_467_499
+  description = "「React技术揭秘」一本自顶向下，从理念到代码的源码分析书"
+  content = "个人感觉还是很不错的一本书，讲解的比较有特点而且不枯燥"
