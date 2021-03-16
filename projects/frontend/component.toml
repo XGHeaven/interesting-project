@@ -1,0 +1,22 @@
+title = "Component Library"
+
+[[groups]]
+title = "Spec"
+
+  [[groups.projects]]
+  name = "open-ui"
+  website = "https://open-ui.org/"
+  description = "微软 Edge 牵头的标准 UI 规范，比较了市面上 UI 框架的不同组件不同 props 的命名规范以及行为"
+  createTime = 1_590_474_950_491
+  updateTime = 1_590_474_950_491
+
+[[groups]]
+title = "Logic Core"
+
+  [[groups.projects]]
+  name = "React Aria"
+  website = "https://react-spectrum.adobe.com/react-aria/index.html"
+  repo = "https://github.com/adobe/react-spectrum"
+  description = "Adobe 家出品的纯逻辑组件库，只封装了组件逻辑，而组件样式需要开发者自己去写"
+  createTime = 1_615_890_671_431
+  updateTime = 1_615_890_671_431

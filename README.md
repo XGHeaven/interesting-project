@@ -9,6 +9,7 @@
   - [DataBase](./docs/db.md)
   - [Docker](./docs/docker.md)
   - [frontend](./docs/frontend)
+    - [Component Library](./docs/frontend/component.md)
     - [Frontend Framework](./docs/frontend/framework.md)
     - [Render Framework or Tools](./docs/frontend/render.md)
     - [UI Framework](./docs/frontend/ui.md)
