@@ -1,0 +1,11 @@
+title = "Others"
+
+[[groups]]
+title = "Message Port Framework"
+
+  [[groups.projects]]
+  name = "penpal"
+  repo = "https://github.com/Aaronius/penpal"
+  description = "A promise-based library for securely communicating with iframes via postMessage."
+  createTime = 1_621_833_658_442
+  updateTime = 1_621_833_658_442

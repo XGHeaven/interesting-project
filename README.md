@@ -11,6 +11,7 @@
   - [frontend](./docs/frontend)
     - [Component Library](./docs/frontend/component.md)
     - [Frontend Framework](./docs/frontend/framework.md)
+    - [Others](./docs/frontend/other.md)
     - [Render Framework or Tools](./docs/frontend/render.md)
     - [UI Framework](./docs/frontend/ui.md)
     - [WebGL](./docs/frontend/webgl.md)
@@ -25,5 +26,6 @@
     - [Tools for anything](./docs/nodejs/tools.md)
   - [website](./docs/website)
     - [CMS Website](./docs/website/cms.md)
+    - [Analytic Web Website](./docs/website/web-analytics.md)
   - [Tech Paper](./docs/weekly.md)
 <!-- /TOC -->

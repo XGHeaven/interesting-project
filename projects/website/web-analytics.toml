@@ -1,0 +1,12 @@
+title = "Analytic Web Website"
+
+[[groups]]
+title = "CSS"
+
+  [[groups.projects]]
+  name = "CSS Stats"
+  website = "https://cssstats.com"
+  repo = "https://github.com/cssstats/cssstats"
+  createTime = 1_621_834_325_600
+  updateTime = 1_621_834_325_600
+  description = "Visualize various stats about your CSS"
